@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+#@tag
 Feature: Validation of Login Functionality
 
  # @tag1
@@ -27,15 +27,15 @@ Feature: Validation of Login Functionality
     #And some other action
     #And yet another action
     #Then I validate the outcomes
-    #And check more outcomes*/
+    #And check more outcomes
 
   @tag2
   Scenario Outline: Log in with valid credential
-    Given Open the Chrome and Lauch Application
-    When EnterUserName<username> and Password<password>
+    Given Open the Chrome and Launch Application
+    When Enter UserName<diyusername> and Password<diypassword>
     Then I verify the <message>
 
     Examples: 
-      |username|password |message|
-      |"automation.tester11@mail.com"|"Password1"|success |
+      |diyusername|diypassword |message|
+      |"automation.tester11@mail.com"|"Password1"|"Welcome"|
       
